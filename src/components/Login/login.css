@@ -11,8 +11,8 @@
 .main{
     overflow: hidden;
     position: relative;
-    width :350px;
-    height: 400px;
+    width :40vw;
+    height: 70vh;
     background-color: rgb(159, 192, 199);
     border-radius: 10px;
     box-shadow: -3px 1px 20px 10px rgb(53 71 77), 0px 1px 40px 40px rgb(199 220 224);
@@ -58,22 +58,22 @@
 } */
 
 .signup{
-    width :350px;
-    height: 400px;
+    /* width :350px;
+    height: 100vh; */
     position: relative;
     backdrop-filter: blur(20px);
     
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateY(-80px);
+    transform: translateY(-100px);
     transition: transform 1s ease-in-out;
     
     
     
 }
 .signup:hover{
-    transform: translateY(-400px);
+    transform: translateY(-70vh);
     
 }
 /* .input[type = "button"]:hover{
@@ -91,13 +91,13 @@
    outline: none;
 }
 .loginButton{
-    color: rgb(186, 177, 162);
+    color: rgb(0, 0, 0);
     margin: auto;
-    width: 100px;
-    height: 30px;
+    /* width: 100px;
+    height: 30px; */
     font-size: large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    border-radius: 10px;
     border: 1px solid rgb(133, 167, 164);
     background-color:transparent;
 } 
@@ -116,4 +116,19 @@
  font-weight: bold;
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  font-style: oblique;
+}
+.googlelogin{
+    color: rgb(0, 0, 0);
+    margin: auto;
+    border-radius: 10px;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    border: 1px solid rgb(133, 167, 164);
+    background-color:transparent
+}
+.googlelogin:hover{
+    cursor: pointer;
+    color: azure;
+     background-color:rgb(109, 170, 171);
 }

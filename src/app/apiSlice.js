@@ -1,7 +1,8 @@
 import {createApi,fetchBaseQuery} from'@reduxjs/toolkit/query/react' 
 import { addCredentials,logout } from '../features/User/authSlice'
 import { updateOrderEmail } from '../features/Products/cartSlice';
-import env from "react-dotenv";
+
+
 const baseQuery = fetchBaseQuery({
     baseUrl : process.env.REACT_APP_BASE_SERVER_URL,
     credentials : 'include',
@@ -39,3 +40,5 @@ export const apiSlice = createApi({
     baseQuery : baseQueryWithReauth,
     endpoints : builder =>({})
 })
+
+export const {useInitialRefreshQuery,useLazyInitialRefreshQuery} = apiSlice
