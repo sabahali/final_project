@@ -47,7 +47,7 @@ const Home = () => {
     const handleLougout = async () => {
         const controller = new AbortController();
         try {
-            const response = await axios.get('http://127.0.0.1:8000/logout', {
+            const response = await axios.get(`${process.env.REACT_APP_BASE_SERVER_URL}/logout`, {
                 withCredentials: true
             })
             // console.log(response)
